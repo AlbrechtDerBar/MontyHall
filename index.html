@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script src="./monty.js"></script>
+    </head>
+    <header>
+        <title>Monty Hall Problem</title>
+    </header>
+    <body>
+        <h1 class="p1">Monty gives you the choice of 1 out of 100 doors.</h1>
+        <h1 class="p2" id="mainText"></h1>
+        <h1 class="p3" id="winText"></h1>
+        <form>
+            <label for="userDoor" class="p1">Please enter a number for the door you would like.</label>
+            <input type="number" min="1" max="100" id="userDoor" class="p1" required>
+            <button type="button" class="p1" onclick="getNum()">pick</button>
+            <button type="button" class="p2" onclick="stay()">Stay</button>
+            <button type="button" class="p2" onclick="change()">Change</button>
+            <button type="button" class="p3" onclick="reload()">Try Again</button>
+        </form>
+        <h2>Your win percent is  <em id="prob">0%</em></h2>
+    </body>
+</html>
